@@ -1,6 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import About from './pages/About';
 import Courses from './pages/Courses';
 import Gallery from './pages/Gallery';
@@ -10,18 +12,19 @@ import VerifyCertificate from './pages/Verify-Certificate';
 
 const App = () => {
     return (
-        <Router>
+        <>
+            <Topbar />
             <Navbar />
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/courses" component={Courses} />
-                <Route path="/gallery" component={Gallery} />
-                <Route path="/appointment" component={Appointment} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/verify-certificate" component={VerifyCertificate} />
-            </Switch>
-        </Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/courses" element={<Courses />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/appointment" element={<Appointment />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/verify-certificate" element={<VerifyCertificate />} />
+            </Routes>
+        </>
     );
 }
 

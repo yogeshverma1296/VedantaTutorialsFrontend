@@ -7,7 +7,7 @@ const Navbar = () => {
             {/* Navbar Start OK */}
             <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
                 <Link to="/" className="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-                    <img src="" alt="Vedanta Tutorials Logo" height="80%" loading="lazy" />
+                    <img src="https://raw.githubusercontent.com/yogeshverma1296/VedantaTutorialsFrontend/main/src/img/Vedanta-Tutorials-Logo.png" alt="Vedanta Tutorials Logo" height="73%" loading="lazy" />
                 </Link>
                 <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Navbar Collapse Button for Smartphones">
                     <span className="navbar-toggler-icon"></span>
