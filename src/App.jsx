@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
 import Home from './pages/Home';
 import About from './pages/About';
 import Courses from './pages/Courses';
@@ -24,6 +25,7 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/verify-certificate" element={<VerifyCertificate />} />
             </Routes>
+            <Carousel />
         </>
     );
 }
